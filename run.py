@@ -1,4 +1,4 @@
-from market import app
+from FlaskApp import app
 from CryptoBot import CryptoBot
 from threading import Thread
 

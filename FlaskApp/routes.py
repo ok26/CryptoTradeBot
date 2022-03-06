@@ -1,8 +1,8 @@
-from market import app
+from FlaskApp import app
 from flask import render_template, redirect, url_for, flash, request
-from market.models import User
-from market.forms import RegisterForm, LoginForm
-from market import db
+from FlaskApp.models import User
+from FlaskApp.forms import RegisterForm, LoginForm
+from FlaskApp import db
 from flask_login import login_user, logout_user, login_required
 from datetime import datetime
 import json

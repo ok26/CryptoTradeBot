@@ -8,7 +8,7 @@ import krakenex
 
 k = krakenex.API() 
 tickers = ['XETHZUSD', 'XXBTZUSD', "MANAUSD", 'GRTUSD', 'LSKUSD', 'SCUSD']
-interval = 1
+interval = 5
 
 
 def load_data():
