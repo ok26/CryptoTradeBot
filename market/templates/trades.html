@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% block title %}
+Trades Page
+{% endblock %}
+{% block content %}
+
+<div class="row" style="margin-top:20px; margin-left:20px">
+   <div class="col-8">
+       <h2>Latest Trades</h2>
+       <p>Displays latest 5 Trades of each Ticker</p>
+       <br>
+      <table class="table table-hover table-dark">
+         <thead>
+            <tr>
+               <!-- Your Columns HERE -->
+               <th scope="col">Ticker</th>
+               <th scope="col">Bought</th>
+               <th scope="col">Purchase Price</th>
+               <th scope="col">Sold</th>
+               <th scope="col">Selling Price</th>
+               <th scope="col">Profit</th>
+            </tr>
+         </thead>
+         <tbody>
+            <!-- Your rows inside the table HERE: -->
+            {% for ticker in tickers %}
+            {% for trade in data[ticker] %}
+            <tr>
+               <td>{{ ticker[:-3] }}</td>
+               <td>{{ trade["Bought"] }}</td>
+               <td>{{ trade["PurchasePrice"] }} USD</td>
+               {% if trade["SellingPrice"] != 0 %}
+                  <td>{{ trade["Sold"] }}</td>
+                  <td>{{ trade["SellingPrice"] }} USD</td>
+                  {% if trade["SellingPrice"]-trade["PurchasePrice"] > 0 %}
+                     <td class="bg-success">{{ (100*(trade["SellingPrice"]-trade["PurchasePrice"])/trade["PurchasePrice"])|round(3) }} %</td>
+                  {% elif trade["SellingPrice"]-trade["PurchasePrice"] == 0 %}
+                     <td class="bg-info">{{ (100*(trade["SellingPrice"]-trade["PurchasePrice"])/trade["PurchasePrice"])|round(3) }} %</td>
+                  {% else %}
+                     <td class="bg-danger">{{ (100*(trade["SellingPrice"]-trade["PurchasePrice"])/trade["PurchasePrice"])|round(3) }} %</td>
+                  {% endif %}
+               {% endif %}
+            </tr>
+            {% endfor %}
+            {% endfor %}
+         </tbody>
+      </table>
+   </div>
+   <div class="col-4">
+      <h2>Owned Items</h2>
+      <p>Currently owned Cryptos and USD balance </p>
+      <br>
+      <div class="row">
+         {% for ticker in balance.keys() %}
+           <div class="col-md-6">
+               <div style="margin-bottom: 5px" class="card text-center bg-dark">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ ticker }}</h5>
+                        <p class="card-text"><strong>
+                            Amount {{ balance[ticker]|float|round(4) }}
+                        </strong></p>
+                    </div>
+                </div>
+           </div>
+         {% endfor %}
+      </div>
+   </div>
+</div>
+{% endblock %}

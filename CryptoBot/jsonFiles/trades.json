@@ -1,0 +1,139 @@
+{
+    "XETHZUSD": [
+        {
+            "Bought": 1646508840,
+            "Sold": 1646509620,
+            "PurchasePrice": 2670.4,
+            "SellingPrice": 2669.99,
+            "Amount": 0.07489514679448772
+        },
+        {
+            "Bought": 1646510400,
+            "Sold": 1646510520,
+            "PurchasePrice": 2668.04,
+            "SellingPrice": 2670.32,
+            "Amount": 0.07500011980013435
+        },
+        {
+            "Bought": 1646512020,
+            "Sold": 1646512500,
+            "PurchasePrice": 2673.98,
+            "SellingPrice": 2669.64,
+            "Amount": 0.07488464486822219
+        },
+        {
+            "Bought": 1646522160,
+            "Sold": 1646522220,
+            "PurchasePrice": 2663.23,
+            "SellingPrice": 2666.13,
+            "Amount": 0.06260605856327005
+        },
+        {
+            "Bought": 1646522820,
+            "Sold": 1646523900,
+            "PurchasePrice": 2662.88,
+            "SellingPrice": 2660.68,
+            "Amount": 0.0626256507775153
+        }
+    ],
+    "XXBTZUSD": [
+        {
+            "Bought": 1646511660,
+            "Sold": 1646511840,
+            "PurchasePrice": 39499.4,
+            "SellingPrice": 39531.4,
+            "Amount": 0.005067168273800562
+        },
+        {
+            "Bought": 1646512080,
+            "Sold": 1646512440,
+            "PurchasePrice": 39449.1,
+            "SellingPrice": 39447.8,
+            "Amount": 0.005075909024153372
+        },
+        {
+            "Bought": 1646516520,
+            "Sold": 1646517600,
+            "PurchasePrice": 39501.0,
+            "SellingPrice": 39401.8,
+            "Amount": 0.004223766400274838
+        }
+    ],
+    "MANAUSD": [
+        {
+            "Bought": 1646510100,
+            "Sold": 1646510340,
+            "PurchasePrice": 2.54472,
+            "SellingPrice": 2.54723,
+            "Amount": 78.61532448184403
+        },
+        {
+            "Bought": 1646511720,
+            "Sold": 1646511900,
+            "PurchasePrice": 2.55468,
+            "SellingPrice": 2.55835,
+            "Amount": 78.34644907156981
+        },
+        {
+            "Bought": 1646512380,
+            "Sold": 1646512680,
+            "PurchasePrice": 2.55349,
+            "SellingPrice": 2.55885,
+            "Amount": 78.4181816591131
+        },
+        {
+            "Bought": 1646515980,
+            "Sold": 1646517060,
+            "PurchasePrice": 2.55655,
+            "SellingPrice": 2.55298,
+            "Amount": 65.26099492568359
+        }
+    ],
+    "GRTUSD": [],
+    "LSKUSD": [
+        {
+            "Bought": 1646506080,
+            "Sold": 1646507160,
+            "PurchasePrice": 1.916685,
+            "SellingPrice": 1.916685,
+            "Amount": 104.34682798686273
+        },
+        {
+            "Bought": 1646509560,
+            "Sold": 1646509680,
+            "PurchasePrice": 1.927787,
+            "SellingPrice": 1.929973,
+            "Amount": 103.74590138848328
+        },
+        {
+            "Bought": 1646510160,
+            "Sold": 1646511060,
+            "PurchasePrice": 1.928098,
+            "SellingPrice": 1.92918,
+            "Amount": 103.7571682121127
+        },
+        {
+            "Bought": 1646522760,
+            "Sold": 1646523840,
+            "PurchasePrice": 1.938799,
+            "SellingPrice": 1.938799,
+            "Amount": 86.01437949082394
+        },
+        {
+            "Bought": 1646523900,
+            "Sold": 1646524080,
+            "PurchasePrice": 1.938799,
+            "SellingPrice": 1.940912,
+            "Amount": 86.00253569545453
+        }
+    ],
+    "SCUSD": [
+        {
+            "Bought": 1646512140,
+            "Sold": 1646512680,
+            "PurchasePrice": 0.00867,
+            "SellingPrice": 0.00866,
+            "Amount": 23095.737333878747
+        }
+    ]
+}
